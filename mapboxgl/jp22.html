@@ -15,9 +15,15 @@ body { margin:0; padding:0; }
 <body>
 <div id='map'></div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiaGZ1IiwiYSI6ImlRSGJVUTAifQ.rTx380smyvPc1gUfZv1cmw';
 map = new mapboxgl.Map({
-  container: 'map', style: 'mapbox://styles/mapbox/satellite-v9',
+  container: 'map',
+  // osm
+  //style: 'https://gist.githubusercontent.com/smellman/d3cbc19d134d5283df73/raw/24aa928ac76056ab0e887d6a65484c1806765260/osm_mapbox_gl_example.json',
+  //style: 'https://gist.githubusercontent.com/smellman/d3cbc19d134d5283df73/raw/a4bb13b44c36e9225f95c545cdedbe7513200d70/osm_mapbox_gl_example.json',
+  // ort
+  style: 'https://gist.githubusercontent.com/smellman/3f2956f096e7cc630c435e59b61bc910/raw/a44cbe910c1de3c7be6cb4c7fa8fb347ca41edc0/mapbox-gl-gsi-ort.json',
+  //style: 'https://gist.githubusercontent.com/smellman/3f2956f096e7cc630c435e59b61bc910/raw/6339e4b3b93364829912f77863df958f00fa8ebb/mapbox-gl-gsi-ort.json',
+  //style: 'https://gist.githubusercontent.com/smellman/3f2956f096e7cc630c435e59b61bc910/raw/38e4f41ed4ef295d48cd1d643a4fefdc3f3549b4/mapbox-gl-gsi-ort.json',
   center: [139.921875,  36.02928], zoom: 8.0, hash: true, maxZoom: 12
 });
 colors = [
